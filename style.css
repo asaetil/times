@@ -1,0 +1,244 @@
+.head-line{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+.head-line svg {
+    width: 430px;
+}
+
+.icon-button {
+    padding: 8px 9px 9px;
+    margin-top: 5px;
+}
+
+.icon-button:hover {
+    background-color: beige;
+}
+
+.hide {
+    display: none;
+}
+
+.menus{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    border-top: 1px solid #ebebeb;
+    padding: 0 60px;
+    border-bottom: 4px double black;
+}
+
+.menus button {
+    background: none;
+    border: none;
+    margin: 5px;
+}
+
+.menus button:hover{
+    background-color: beige;
+}
+
+.news-img-size {
+    max-width: 100%;
+    max-height: 250px;
+}
+
+.row {   
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.news {    
+    border-bottom: 2px solid black;
+    margin: 0px;
+}
+
+.txt {  
+    padding-right: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;  
+    line-height: 1.5;
+    height: 4.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.fa-xmark {
+    color:black
+}
+
+.fa-magnifying-glass {
+    color:#FCAB9B
+}
+
+#search-input {
+    border : 1px solid gray;
+    font-family: '나눔고딕', sans-serif;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: 0;
+    padding-left : 10px;
+    padding-right : 10px;
+    padding-top : 2px;
+    padding-bottom : 2px;
+}
+
+#search-input:focus {
+    border: 1px solid lightpink;
+    font-family: '나눔고딕', sans-serif;
+    font-size: 1rem;
+    outline: 0;
+    padding-left : 10px;
+    padding-right : 10px;
+    padding-top : 2px;
+    padding-bottom : 2px;
+}
+
+
+#search-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    --button-color: #ffffff;
+    background: var(--button-bg-color);
+    color: var(--button-color);
+    
+    margin: 0;
+    padding: 0.2rem 0.5rem;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    
+    border: none;
+    border-radius: 4px;
+    
+    display: inline-block;
+    width: auto;
+    
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    
+    cursor: pointer;
+    
+    transition: 0.5s;
+
+    --button-bg-color: #FCAB9B;
+    --button-hover-bg-color: #F37056;
+}
+
+#search-button:active,
+#search-button:hover,
+#search-button:focus {
+  background: var(--button-hover-bg-color);
+  outline: 0;
+}
+
+#search-button:disabled {
+    opacity: 0.5;
+}
+  
+
+.title {
+    font-size: 20pt;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+
+.title:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FCAB9B;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+.side-menu-list button {
+    margin-top: 4px;
+    padding: 8px;
+    border: none;
+    background: none;
+    width: 100%;
+    font-family: '나눔고딕', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.side-menu-list menu-list:hover{
+    background-color: beige;
+}
+
+
+.side-menu .closebtn {
+    background-color: beige;      
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 50px;
+    border: none;
+    background: none;    
+}
+
+
+.side-menu .closebtn:hover{
+    transform: rotate(0.5turn);
+    transition: transform 0.2s linear;
+}
+
+
+.side-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.side-menu-list button:hover {
+    background-color: beige;
+}
+
+
+#input-area {
+    display: none;
+}
+
+
+@media screen and (max-width: 63rem) {
+    .hide {
+      display: inline;
+    }
+    .menus {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 63rem) {
+    .side-menu{
+        position: absolute;
+        left: -250px;
+    }
+}
